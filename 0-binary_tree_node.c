@@ -3,10 +3,10 @@
 /**
  * binary_tree_node - crate binary tree node.
  * @parent:  to create new.
- * @value: value to put in the news node.
+ * @value: value to put in the new node.
  *
  * return: If an error occurs - NULL.
- *         otherwise - pointer news node.
+ *         otherwise - pointer new node.
  */
 
 binary_tree_t *binary_tree_node(binary_tree_t *parent, int value)
