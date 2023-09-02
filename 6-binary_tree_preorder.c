@@ -6,12 +6,12 @@
  * @func: Pointer To a FUN to CALL for each Node.
  *
  */
-void binary_tree_preorder(const binary_tree_t *tree, void (*function)(int))
+void binary_tree_preorder(const binary_tree_t *tree, void (*func)(int))
 {
-	if (!tree || !function)
+	if (!tree || !func)
 		return;
 
 	func(tree->n);
-	binary_tree_preorder(tree->left, function);
-	binary_tree_preorder(tree->right, function);
+	binary_tree_preorder(tree->left, func);
+	binary_tree_preorder(tree->right, func);
 }
